@@ -39,7 +39,7 @@ void Producer::run()
        // qDebug()<<"haha";
         freeBytes.acquire();
         buffer[i%BufferSize]=(i%BufferSize);
-    //    qDebug()<<"P"+(int)buffer[i%BufferSize];
+        qDebug()<<"P"+(int)buffer[i%BufferSize];
      //   printf("p  %d", buffer[i%BufferSize]);
         usedBytes.release();
     }
